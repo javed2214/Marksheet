@@ -1,0 +1,76 @@
+<br>
+<center>
+
+	<p style="font-family:'Bahnschrift'; color: green; font-size:34px; font-weight: bolder;">CBSE BOARD</p></center>
+
+
+
+<center><p style="font-family:'calibri'; color: orange; font-size:26px; font-weight: bolder;">MARKSHEET</p></center>
+<br>
+
+<h3 style="font-family:'cambria'; color: #E109EA; font-size:20px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name: {{name}}</h3>
+<h3 style="font-family:'cambria'; color: #E109EA; font-size:20px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Roll No: {{rollno}}</h3>
+
+<center>
+
+	<table border="3" cellpadding="13" align="center">
+		
+		<tr style="color: red; font-family: calibri; font-size: 20px; ">
+			<th>Subject Code</th>
+			<th>Subject Name</th>
+			<th>Max Marks</th>
+			<th>Marks Obtained</th>
+			<th>Grade</th>
+			<th>Remark</th>
+		</tr>
+
+		<tr align="center" style="color: blue; font-family: calibri; font-size: 18px; ">
+			{% for data in physics %}
+			<td>{{ data }}</td>
+			{% endfor %}
+		</tr>
+		<tr align="center" style="color: blue; font-family: calibri; font-size: 18px; ">
+			{% for data in chemistry %}
+			<td>{{ data }}</td>
+			{% endfor %}
+		</tr>
+		<tr align="center" style="color: blue; font-family: calibri; font-size: 18px; ">
+			{% for data in maths %}
+			<td>{{ data }}</td>
+			{% endfor %}
+		</tr>
+		<tr align="center" style="color: blue; font-family: calibri; font-size: 18px; ">
+			{% for data in english %}
+			<td>{{ data }}</td>
+			{% endfor %}
+		</tr>
+		<tr align="center" style="color: blue; font-family: calibri; font-size: 18px; ">
+			{% for data in computer %}
+			<td>{{ data }}</td>
+			{% endfor %}
+		</tr>
+
+	</table>
+
+	<br>
+	<h3 style="color: brown; font-family: cambria; font-size: 18px; ">RESULT :&nbsp;&nbsp;
+	{{ result }}
+	{% for sup in supple %}
+	{{sup}}
+	{% endfor %}</h3>
+
+</center>
